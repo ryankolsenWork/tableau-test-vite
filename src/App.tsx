@@ -26,11 +26,19 @@ function App() {
               className="text-blue-700 text-3xl text-center w-full p-4">Tableau POC using Tableau Embedding API v3
             </h2>
             </a>
-            <div>
+            <p>Table shared publicly</p>
+            <div className="">
               <tableau-viz id="tableauViz"
                            src="http://public.tableau.com/views/RegionalSampleWorkbook/Storms">
               </tableau-viz>
             </div>
+          </div>
+          <p className="text-center w-[900px] pt-20">Table shared privately, need to log in to Tableau Cloud to view</p>
+          <div className="w-[900px] border-2 ">
+
+
+            <tableau-viz id='tableau-viz' src='https://prod-useast-b.online.tableau.com/t/pwwtest/views/workbook/Sheet1'
+            ></tableau-viz>
           </div>
 
         </header>
